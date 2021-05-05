@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <template id="is_external_layout_standard" name="is_external_layout_standard" inherit_id="web.external_layout_standard">
+        <div  t-att-style="report_header_style" position="replace">
+            <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+                <div class="row">
+                    <div class="col-5">
+                        <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo" style="max-height: 100px;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  t-attf-class="footer o_standard_footer o_company_#{company.id}_layout" position="replace">
+            <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
+                <div class="row" style="color:#AF1376; text-align:center" >
+                    <div class="col-12">
+                        <div>SARL COHELIANCE FORMATION au capital de 1 000 € - 170 avenue Jean Jaurès - 21 000 DIJON</div>
+                        <div><span t-field="res_company.company_registry"/> - APE 8559A</div>
+                        <div>Tél. 03 80 52 11 22 - Email : contact@coheliance.com - www.coheliance.com</div>
+                        <div>Numéro de déclaration d'activité : 27 21 03589 21 - Numéro TVA intracommunautaire : FR 37 819719816</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div t-attf-class="article o_report_layout_standard o_company_#{company.id}_layout" position="replace">
+            <div t-attf-class="article o_report_layout_standard o_company_#{company.id}_layout"  t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+                <!-- <div class="pt-5">
+                    <t t-call="web.address_layout"/>
+                </div> -->
+                <t t-raw="0"/>
+            </div>
+        </div>
+    </template>
+</odoo>
