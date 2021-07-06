@@ -21,6 +21,7 @@ InfoSaône - Module Odoo 14 pour Coheliance Formation
   "demo_xml" : [],            
   "data" : [
       "views/layouts.xml",
+      "views/assets.xml",
   ],                           
   "installable": True,         
   "active": False,            
