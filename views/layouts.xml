@@ -35,7 +35,7 @@
             <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
                 <div class="row" style="color:#AF1376; text-align:center" >
                     <div class="col-12">
-                        <div>TEST SARL COHELIANCE FORMATION au capital de 1 000 € - 170 avenue Jean Jaurès - 21 000 DIJON</div>
+                        <div>SARL COHELIANCE FORMATION au capital de 1 000 € - 170 avenue Jean Jaurès - 21 000 DIJON</div>
                         <div><span t-field="res_company.company_registry"/> - APE 8559A</div>
                         <div>Tél. 03 80 52 11 22 - Email : contact@coheliance.com - www.coheliance.com</div>
                         <div>Numéro de déclaration d'activité : 27 21 03589 21 - Numéro TVA intracommunautaire : FR 37 819719816</div>
